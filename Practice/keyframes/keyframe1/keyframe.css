@@ -1,0 +1,43 @@
+/* Define a div element with some styles */
+.box{
+  height: 300px;
+  width: 300px;
+  border: black solid 2px;
+  background-color: red;
+  position: relative;
+  animation: shapeShift 5s infinite;
+}
+
+/* Define a couple keyframes to set on the div element */
+@keyframes transformer {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+  }
+}
+
+@keyframes shapeShift {
+  25% {
+    background-color: green;
+    border-radius: 25%;
+    top: 500px;
+  }
+  50% {
+    background-color: purple;
+    border-radius: 75%;
+    left: 60%;
+  }
+  75% {
+    background-color: yellow;
+    border-radius: 100%;
+    top: 0%;
+  }
+  100% {
+    background-color: orange;
+    border-radius: 0%;
+    top: 0%;
+    left: 0%;
+  }
+}
