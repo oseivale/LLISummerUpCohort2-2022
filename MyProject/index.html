@@ -11,22 +11,23 @@
         <form class="to-do-form" action="index.html" method="post">
           <label class="to-do-input" for="">
             Title
-            <input type="text" name="title" value="" placeholder="Your title here...">
+            <input id="title" type="text" name="title" value="" placeholder="Your title here...">
           </label>
           <label class="to-do-input" for="">
             Description
-            <input type="text" name="description" value="" placeholder="Your description here...">
+            <textarea id="description" value="" placeholder="Your description here..." rows="8" cols="80" name="description"></textarea>
           </label>
           <label class="to-do-input" for="">
             Due Date
-            <input type="date" name="date" value="">
+            <input id="date" type="date" name="date" value="">
           </label>
-          <input class="to-do-button" type="submit" name="" value="Add To-Do">
+          <input id="to-do-button" class="to-do-button" type="submit" name="" value="Add To-Do">
         </form>
       </div>
-      <div class="to-do-items">
+      <div id="to-do-items" class="to-do-items">
 
       </div>
     </div>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
