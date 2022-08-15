@@ -1,16 +1,22 @@
 .to-do-wrapper{
-  max-width: 860px;
+  display: flex;
+  max-width: 1060px;
   width: 100%;
-  background-color: grey;
+  background-color: #DDDDDE;
   margin: 5rem auto;
   height: 50vh;
   padding: 2rem;
+  font-family: 'Barlow', sans-serif;
+  border-radius: 10px;
 }
 
 .to-do-form{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.to-do-form-container{
   width: 50%;
 }
 
@@ -20,5 +26,45 @@
 
 .to-do-button{
   margin-top: 2rem;
+  width: 50%;
+  background-color: #4428BF;
+  color: #ffffff;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.to-do-button:hover{
+  background-color: #ffffff;
+  color: #4428BF;
+  cursor: pointer;
+  border: 2px solid #4428BF;
+}
+
+.to-do-text{
+  font-family: 'Barlow', sans-serif;
+}
+
+h3{
+  font-weight: bold;
+}
+
+input, textarea{
+  padding: 1rem;
   width: 90%;
+}
+
+.to-do-items{
+  padding: 2rem;
+}
+
+.to-do-item{
+  background-color: #ffffff;
+  box-shadow: 8px 8px 8px 0px rgba(114, 114, 114, 0.86);
+  padding: 0 1rem;
+  border: #DDDDDE solid 0.8px;
+  border-radius: 5px;
+  width: 30rem;
+  margin: 1rem;
 }
